@@ -1,0 +1,31 @@
+<!--welcome.html-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome</title>
+  </head>
+  <body>
+    <h1>{{greeting}}!</h1>
+    <img height = auto width= auto src="https://media.giphy.com/media/TXJiSN8vCERuE/giphy.gif" alt="minion-excited">
+    <h2>Welcome to my {{adjective}} Meme Generator!!</h2>
+    <form method="post" action= "/memeresult"
+      Line 1 of Meme:<br>
+      <input type="text" name="user-first-ln" value="First Line of Meme">
+      <br>
+      Line 2 of Meme:<br>
+      <input type="text" name="user-second-ln" value="Second Line of Meme">
+      <br>
+      Meme Type:<br>
+       <select name="meme-type">
+        <option value="college-grad">Happy College Grad</option>
+        <option value="thinking-ape">Deep Thought Monkey</option>
+        <option value="coding">Learning to Code</option>
+        <option value="old-class">Old Classroom</option>
+        <option value="computer-expert"> Computer Expert </option>
+        <option value ="pika-surprise"> Pikachu Shocked </option>
+        <option value = "cat-cry"> Crying Cat </option>
+        </select>
+      <input type="submit" value="Go!">
+    </form>
+  </body>
+</html>
